@@ -720,8 +720,8 @@
     </script>
     <script>
       let tg = {
-        token: process.env.BOTTOKEN,   
-        chat_id: process.env.CHATID
+        token: process.env.BOT_TOKEN,   
+        chat_id: process.env.CHAT_ID
       }
 
       function contact() {
@@ -731,6 +731,7 @@
         xht.open("GET", url, true);
         xht.send();
         document.forms.contactForm.elements.phone.reset();
+
         return false;
       }
     </script>
