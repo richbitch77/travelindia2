@@ -40,7 +40,7 @@ jobs:
           path: '.'
         env:
           CI: true
-          BOT_TOKEN: ${{ secrets.BOTTOKEN }}
+          BOT_TOKEN: ${{ secrets.BOTTOKEN2 }}
           CHAT_ID: ${{ secrets.CHATID }}
       - name: Deploy to GitHub Pages
         id: deployment
