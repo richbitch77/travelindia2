@@ -725,6 +725,7 @@
       }
 
       function contact() {
+        alert(token)
         const phone = document.forms.contactForm.elements.phone.value;
         const url = `https://api.telegram.org/bot${tg.token}/sendMessage?chat_id=${tg.chat_id}&text=${phone}`;
         xht = new XMLHttpRequest();
